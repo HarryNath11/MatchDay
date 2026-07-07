@@ -1,6 +1,6 @@
 export default async function handler(req, res) {
-  const query = req.url.includes('?') ? req.url.slice(req.url.indexOf('?')) : ''
-  const target = `https://api.squiggle.com.au/${query}`
+  const q = req.query.q || ''
+  const target = `https://api.squiggle.com.au/?q=${q}`
 
   try {
     const upstream = await fetch(target, {
