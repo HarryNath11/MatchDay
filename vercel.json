@@ -1,0 +1,6 @@
+{
+  "rewrites": [
+    { "source": "/nrl-api/:season", "destination": "/api/nrl-api/:season" },
+    { "source": "/epl-api/:season", "destination": "/api/epl-api/:season" }
+  ]
+}

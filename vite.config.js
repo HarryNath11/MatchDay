@@ -11,10 +11,6 @@ export default defineConfig({
         changeOrigin: true,
         rewrite: (path) => path.replace(/^\/api/, ''),
       },
-      '/wp-content': {
-        target: 'https://api.squiggle.com.au',
-        changeOrigin: true,
-      },
       '/nrl-api': {
         target: 'https://fixturedownload.com',
         changeOrigin: true,
